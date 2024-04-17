@@ -1,0 +1,460 @@
+
+ 
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Сайт</title>
+
+  <!-- Template Basic Images -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="css/libs.css" />
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <script src="https://api-maps.yandex.ru/v3/?apikey=f8effce4-070f-45f1-99f6-d03cffde090c&lang=ru_RU"></script>
+
+</head>
+
+<body class="_home">
+
+<header class="header" id="header">
+  <div class="container">
+    <div class="header__body">
+      <div class="header__item">
+        <a href="/" class="header__logo"><img src="img/logo.svg"></a>
+        <a href="tel:+7 (812) 660-57-77" class="header__phone">+7 (812) 660-57-77</a>
+        <a href="mailto:info@sksns.ru" class="header__mail header__mail--mob">info@sksns.ru</a>
+      </div>
+      <ul>
+        <li><a href="/">На главную</a></li>
+        <li class="menu-item-has-children">
+          <a href="#">Услуги</a>
+          <ul class="sub-menu">
+            <li><a href="#">Кровельные работы</a></li>
+            <li><a href="#">Электромонтажные работы</a></li>
+            <li><a href="#">Монолитное строительство</a></li>
+            <li><a href="#">Ремонт и отделка помещений</a></li>
+            <li><a href="#">Инъектирование всех типов</a></li>
+            <li><a href="#">Устройство бетонных промышленных полов</a></li>
+            <li><a href="#">Монтаж металлоконструкций и сэндвич панелей</a></li>
+            <li><a href="#">Проектирование</a></li>
+            <li><a href="#">Благоустройство территорий</a></li>
+          </ul>
+        </li>
+        <li><a href="objects.html">Наши объекты</a></li>
+        <li><a href="docs.html">Документы</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="header__btns">
+        <a href="#" class="header__outline">Услуги</a>
+        <a href="mailto:info@sksns.ru" class="header__mail">info@sksns.ru</a>
+        <a href="#call" data-fancybox class="header__btn">Рассчитать стоимость</a>
+        <div class="header__btn header__burger">
+          <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1" x2="19" y2="1" stroke="white" stroke-width="2"/>
+            <line y1="11" x2="19" y2="11" stroke="white" stroke-width="2"/>
+          </svg>          
+        </div>
+        <div class="header__btn header__burger--active">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="1.07115" y1="1.39663" x2="12.5352" y2="12.8607" stroke="white" stroke-width="1.70659"/>
+            <line y1="-0.853297" x2="16.2126" y2="-0.853297" transform="matrix(-0.707107 0.707107 0.707107 0.707107 12.9316 2)" stroke="white" stroke-width="1.70659"/>
+          </svg>                     
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="header__nav--mob">
+  <ul>
+    <li><a href="/">На главную</a></li>
+    <li class="menu-item-has-children">
+      <a href="#">Услуги</a>
+      <ul class="sub-menu">
+        <li><a href="#">Кровельные работы</a></li>
+        <li><a href="#">Электромонтажные работы</a></li>
+        <li><a href="#">Монолитное строительство</a></li>
+        <li><a href="#">Ремонт и отделка помещений</a></li>
+        <li><a href="#">Инъектирование всех типов</a></li>
+        <li><a href="#">Устройство бетонных промышленных полов</a></li>
+        <li><a href="#">Монтаж металлоконструкций и сэндвич панелей</a></li>
+        <li><a href="#">Проектирование</a></li>
+        <li><a href="#">Благоустройство территорий</a></li>
+      </ul>
+    </li>
+    <li><a href="objects.html">Наши объекты</a></li>
+    <li><a href="docs.html">Документы</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+</div>
+
+<div class="modal" id="call">
+  <h2 class="modal__offer">Обратный звонок</h2>
+  <p class="modal__desc">Укажите свои контактные данные, наш менеджер свяжется <br>с Вами для обратного звонка</p>
+  <form action="#">
+    <input type="text" placeholder="Ваше имя">
+    <input type="tel" placeholder="Ваш телефон">
+    <input type="submit" value="Оставить заявку">
+  </form>
+  <div class="modal__alert">Мы гарантируем, что Ваши личные данные не будут переданы третьим лицам</div>
+</div>
+
+<section class="main">
+    <div class="container">
+        <div class="main__body">
+            <h1 class="main__offer"><img src="img/main-offer.svg"></h1>
+            <h1 class="main__offer--mob"><img src="img/main-offer-mob.svg"></h1>
+            <div class="main__suboffer">Генподрядная организация</div>
+            <p class="main__desc">Компания является Генеральным Подрядчикоми оказывает комплексные услугипо строительству и реконструкцииот проекта до реализации.Основана в 2017 году.</p>
+            <a href="#" class="main__btn">
+                <span>Рассчитать стоимость</span>
+                <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.8019 9.80191C22.2448 9.35903 22.2448 8.64097 21.8019 8.19809L14.5848 0.980943C14.1419 0.538062 13.4238 0.538062 12.9809 0.980943C12.5381 1.42382 12.5381 2.14187 12.9809 2.58475L19.3962 9L12.9809 15.4152C12.5381 15.8581 12.5381 16.5762 12.9809 17.0191C13.4238 17.4619 14.1419 17.4619 14.5848 17.0191L21.8019 9.80191ZM0 10.1341H21V7.86593H0V10.1341Z" fill="white"/>
+                </svg>                    
+            </a>
+            <a href="#" class="main__link">Скачать презентацию</a>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <div class="services__body">
+            <h3 class="offer">Виды услуг</h3>
+            <div class="services__items">
+
+                <div class="services__item" style="background-image: url('img/service-bg.png')">
+                    <div class="services__item-wrapper">
+                        <h3 class="services__item-title">Кровельные работы</h3>
+                        <div class="services__item-bottom">
+                            <div class="services__item-offer">Монолитное строительство</div>
+                            <div class="services__item-desc">
+                                <ul>
+                                    <li>асфальтирование территорий</li>
+                                    <li>бетонирование пола</li>
+                                    <li>устройство фундаментов</li>
+                                    <li>утепление фундамента</li>
+                                    <li>устройство подпорных стен</li>
+                                </ul>
+                            </div>
+                            <a href="single.html" class="services__item-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__item" style="background-image: url('img/service-bg.png')">
+                    <div class="services__item-wrapper">
+                        <h3 class="services__item-title">Кровельные работы</h3>
+                        <div class="services__item-bottom">
+                            <div class="services__item-offer">Монолитное строительство</div>
+                            <div class="services__item-desc">
+                                <ul>
+                                    <li>асфальтирование территорий</li>
+                                    <li>бетонирование пола</li>
+                                    <li>устройство фундаментов</li>
+                                    <li>утепление фундамента</li>
+                                    <li>устройство подпорных стен</li>
+                                </ul>
+                            </div>
+                            <a href="single.html" class="services__item-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__item" style="background-image: url('img/service-bg.png')">
+                    <div class="services__item-wrapper">
+                        <h3 class="services__item-title">Кровельные работы</h3>
+                        <div class="services__item-bottom">
+                            <div class="services__item-offer">Монолитное строительство</div>
+                            <div class="services__item-desc">
+                                <ul>
+                                    <li>асфальтирование территорий</li>
+                                    <li>бетонирование пола</li>
+                                    <li>устройство фундаментов</li>
+                                    <li>утепление фундамента</li>
+                                    <li>устройство подпорных стен</li>
+                                </ul>
+                            </div>
+                            <a href="single.html" class="services__item-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__line"></div>
+
+                <div class="services__item" style="background-image: url('img/service-bg.png')">
+                    <div class="services__item-wrapper">
+                        <h3 class="services__item-title">Кровельные работы</h3>
+                        <div class="services__item-bottom">
+                            <div class="services__item-offer">Монолитное строительство</div>
+                            <div class="services__item-desc">
+                                <ul>
+                                    <li>асфальтирование территорий</li>
+                                    <li>бетонирование пола</li>
+                                    <li>устройство фундаментов</li>
+                                    <li>утепление фундамента</li>
+                                    <li>устройство подпорных стен</li>
+                                </ul>
+                            </div>
+                            <a href="single.html" class="services__item-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__item" style="background-image: url('img/service-bg.png')">
+                    <div class="services__item-wrapper">
+                        <h3 class="services__item-title">Кровельные работы</h3>
+                        <div class="services__item-bottom">
+                            <div class="services__item-offer">Монолитное строительство</div>
+                            <div class="services__item-desc">
+                                <ul>
+                                    <li>асфальтирование территорий</li>
+                                    <li>бетонирование пола</li>
+                                    <li>устройство фундаментов</li>
+                                    <li>утепление фундамента</li>
+                                    <li>устройство подпорных стен</li>
+                                </ul>
+                            </div>
+                            <a href="single.html" class="services__item-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="appreciate">
+    <div class="container">
+        <div class="appreciate__body">
+            <h2 class="offer">Мы ценим работу с нашими клиентами</h2>
+            <div class="appreciate__items">
+                <div class="appreciate__item">
+                    <div class="appreciate__img"><img src="img/appreciate-1.png"></div>
+                    <div class="appreciate__item-content">
+                        <div class="appreciate__item-offer">Энторос</div>
+                        <div class="appreciate__item-desc">Производство котлов</div>
+                    </div>
+                </div>
+                <div class="appreciate__item">
+                    <div class="appreciate__img"><img src="img/appreciate-2.png"></div>
+                    <div class="appreciate__item-content">
+                        <div class="appreciate__item-offer">Балтийский солод</div>
+                        <div class="appreciate__item-desc">Производство солода</div>
+                    </div>
+                </div>
+                <div class="appreciate__item">
+                    <div class="appreciate__img"><img src="img/appreciate-3.png"></div>
+                    <div class="appreciate__item-content">
+                        <div class="appreciate__item-offer">Императорский Фарфоровый завод</div>
+                        <div class="appreciate__item-desc">Фарфоровый завод</div>
+                    </div>
+                </div>
+                <div class="appreciate__item">
+                    <div class="appreciate__img"><img src="img/appreciate-4.png"></div>
+                    <div class="appreciate__item-content">
+                        <div class="appreciate__item-offer">Невская Косметика</div>
+                        <div class="appreciate__item-desc">Производство коспетики</div>
+                    </div>
+                </div>
+                <div class="appreciate__item">
+                    <div class="appreciate__img"><img src="img/appreciate-5.png"></div>
+                    <div class="appreciate__item-content">
+                        <div class="appreciate__item-offer">MKS Management company</div>
+                        <div class="appreciate__item-desc">Ресторанный бизнес</div>
+                    </div>
+                </div>
+                <div class="appreciate__item">
+                    <div class="appreciate__img"><img src="img/appreciate-6.png"></div>
+                    <div class="appreciate__item-content">
+                        <div class="appreciate__item-offer">Maritime Montering</div>
+                        <div class="appreciate__item-desc">Судовые интерьеры</div>
+                    </div>
+                </div>
+                <div class="appreciate__item">
+                    <div class="appreciate__img"><img src="img/appreciate-1.png"></div>
+                    <div class="appreciate__item-content">
+                        <div class="appreciate__item-offer">Энторос</div>
+                        <div class="appreciate__item-desc">Производство котлов</div>
+                    </div>
+                </div>
+                <div class="appreciate__item">
+                    <div class="appreciate__img"><img src="img/appreciate-2.png"></div>
+                    <div class="appreciate__item-content">
+                        <div class="appreciate__item-offer">Балтийский солод</div>
+                        <div class="appreciate__item-desc">Производство солода</div>
+                    </div>
+                </div>
+                <div class="appreciate__item">
+                    <div class="appreciate__img"><img src="img/appreciate-3.png"></div>
+                    <div class="appreciate__item-content">
+                        <div class="appreciate__item-offer">Императорский Фарфоровый завод</div>
+                        <div class="appreciate__item-desc">Фарфоровый завод</div>
+                    </div>
+                </div>
+                <div class="appreciate__item">
+                    <div class="appreciate__img"><img src="img/appreciate-4.png"></div>
+                    <div class="appreciate__item-content">
+                        <div class="appreciate__item-offer">Невская Косметика</div>
+                        <div class="appreciate__item-desc">Производство коспетики</div>
+                    </div>
+                </div>
+                <div class="appreciate__item">
+                    <div class="appreciate__img"><img src="img/appreciate-5.png"></div>
+                    <div class="appreciate__item-content">
+                        <div class="appreciate__item-offer">MKS Management company</div>
+                        <div class="appreciate__item-desc">Ресторанный бизнес</div>
+                    </div>
+                </div>
+                <div class="appreciate__item">
+                    <div class="appreciate__img"><img src="img/appreciate-6.png"></div>
+                    <div class="appreciate__item-content">
+                        <div class="appreciate__item-offer">Maritime Montering</div>
+                        <div class="appreciate__item-desc">Судовые интерьеры</div>
+                    </div>
+                </div>
+                <div class="appreciate__item">
+                    <div class="appreciate__img"><img src="img/appreciate-5.png"></div>
+                    <div class="appreciate__item-content">
+                        <div class="appreciate__item-offer">MKS Management company</div>
+                        <div class="appreciate__item-desc">Ресторанный бизнес</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ourobj">
+    <div class="container">
+        <div class="ourobj__body">
+            <h2 class="offer">Наши объекты</h2>
+            <div class="ourobj__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://www.youtube.com/watch?v=1JbKOeeGRAM&ab_channel=insaneintherainmusic" data-fancybox="ourobj" class="ourobj__slide"><img src="img/ourobj.png"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.youtube.com/watch?v=1JbKOeeGRAM&ab_channel=insaneintherainmusic" data-fancybox="ourobj" class="ourobj__slide"><img src="img/ourobj.png"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.youtube.com/watch?v=1JbKOeeGRAM&ab_channel=insaneintherainmusic" data-fancybox="ourobj" class="ourobj__slide"><img src="img/ourobj.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="letters">
+    <div class="container">
+        <div class="letters__body">
+            <h2 class="offer">Благодарственные письма</h2>
+            <div class="letters__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="img/letters.png" data-fancybox="letters" class="letters__slide"><img src="img/letters.png"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="img/letters.png" data-fancybox="letters" class="letters__slide"><img src="img/letters.png"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="img/letters.png" data-fancybox="letters" class="letters__slide"><img src="img/letters.png"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="img/letters.png" data-fancybox="letters" class="letters__slide"><img src="img/letters.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer" id="footer">
+  <div class="footer__wrapper">
+    <div class="container">
+      <div class="footer__body">
+        <div class="footer__left">
+          <a href="/" class="footer__logo"><img src="img/footer-logo.svg"></a>
+          <div class="footer__left-items">
+            <div class="footer__left-item">
+              <div class="footer__left-item-suboffer">Телефон</div>
+              <div class="footer__left-item-desc">+7 (812) 660-57-77</div>
+            </div>
+            <div class="footer__left-item">
+              <div class="footer__left-item-suboffer">Email</div>
+              <div class="footer__left-item-desc">info@sksns.ru</div>
+            </div>
+            <div class="footer__left-item">
+              <div class="footer__left-item-suboffer">Адрес</div>
+              <div class="footer__left-item-desc">СПБ, ул. Розенштейна 21 <br>(м. Нарвская 1,2 км)</div>
+            </div>
+            <div class="footer__left-item footer__left-item--mob">
+              <div class="footer__left-item-suboffer">Отдела снабжения и закупок</div>
+              <div class="footer__left-item-desc"><a href="mailto:snab@sksns.ru">snab@sksns.ru</a></div>
+            </div>
+          </div>
+          <div class="footer__map" id="map"></div>
+          <p class="footer__left-desc">Генподрядная организация ООО Строительная компания "Сманевстрой" ИНН: 3906913446 ОГРН: 1173926014580 | <br>
+            © 2017-2023 Все права защищены</p>
+        </div>
+        <div class="footer__center">
+          <div class="footer__center-top">
+            <div class="footer__center-desc">Данный сайт носит информационный характер и не является публичной офертой (ст. 435 ГК РФ)</div>
+            <div class="footer__left-item footer__left-item--center">
+              <div class="footer__left-item-suboffer">Отдела снабжения и закупок</div>
+              <div class="footer__left-item-desc"><a href="mailto:snab@sksns.ru">snab@sksns.ru</a></div>
+            </div>
+          </div>
+          <div class="footer__center-bottom">
+            <div class="footer__center-bottom-item">Все права защищены</div>
+            <div class="footer__center-bottom-item">
+              <a href="#">Политика конфиденциальности</a>
+              <a href="#">Информация</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__right-left">
+            <ul>
+              <li><a href="/">Главная</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Наши проекты</a></li>
+              <li><a href="#">Документы</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <a href="#" class="footer__right-btn">
+              <span>Оставить заявку</span>
+              <svg width="35" height="17" viewBox="0 0 35 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M34.0678 9.43472C34.5107 8.99183 34.5107 8.27378 34.0678 7.8309L26.8507 0.613753C26.4078 0.170872 25.6898 0.170872 25.2469 0.613753C24.804 1.05663 24.804 1.77468 25.2469 2.21756L31.6621 8.63281L25.2469 15.0481C24.804 15.4909 24.804 16.209 25.2469 16.6519C25.6898 17.0947 26.4078 17.0947 26.8507 16.6519L34.0678 9.43472ZM9.91432e-08 9.76688L33.2659 9.76688L33.2659 7.49874L-9.91432e-08 7.49875L9.91432e-08 9.76688Z" fill="#E70D2F"/>
+              </svg>            
+            </a>
+          </div>
+          <div class="footer__right-desc">Данный сайт носит информационный характер и не является публичной офертой (ст. 435 ГК РФ)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- скрипты -->
+
+<script src="js/libs.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
